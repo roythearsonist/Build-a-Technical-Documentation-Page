@@ -9,6 +9,10 @@
       .main-section {
         text-align: center;
       }
+      .code-bg {
+        background-color: black;
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -17,6 +21,9 @@
         <header>Introduction to HTML</header>
         <p>HTML is a markup languiage that is used in nearly every website.</p>
         <p>This tutorial will show you the basics of HTML.</p>
+        <p>Here is an example of HTML</p>
+        <code class="code-bg"> &lt; h1 &gt; Hello World! &lt; /h1 &gt; </code>
+        <p>Will create a heading level 1 with the text "Hello World!"</p>
       </section>
       <section class="main-section" id="Fundamentals_of_HTML">
         <header>Fundamentals of HTML</header>
@@ -25,21 +32,46 @@
           A parent element is an element that holds an element inside of it. A
           child is an element that is inside another element.
         </p>
+        <p>Here is an example of a parent and child relationship:</p>
+        <code class="code-bg">
+          &lt;div&gt; &lt;p&gt; Hello there! &lt;/p&gt; &lt;/div&gt;
+        </code>
       </section>
       <section class="main-section" id="Introduction_to_CSS">
         <header>Introduction to CSS</header>
         <p>CSS helps to style elements in HTML.</p>
         <p>This tutorial shows how to style elements using CSS.</p>
+        <p>Here is a quick way to create a  center-aligning class.</p>
+        <code class="code-bg">
+        .class{
+        text-align: center;
+        }
+        </code>
       </section>
       <section class="main-section" id="Fundamentals_of_CSS">
         <header>Fundamentals of CSS</header>
         <p>CSS also uses parents and children.</p>
         <p>To do this the parent comes first, then a space, then the child.</p>
+        <p>For example:</p>
+        <code class="code-bg">
+          html body{
+          text-align: center;
+          }
+        </code>
+        <p>Makes the html's body element align to the center</p>
       </section>
       <section class="main-section" id="Using_both_at_the_same_time">
         <header>Using both at the same time</header>
         <p>There are two ways to use both at the same time.</p>
-        <p>One is to use the link element. Another is to use the style element.</p>
+        <p>
+          One is to use the link element. Another is to use the style element.
+        </p>
+        <code class="code-bg">
+        Option 1: Link
+        &lt;link href="yourcssfilename.css" rel="stylesheet" type="text/css"&gt;
+        Option 2: Style
+        &lt;style&gt; CSS goes here...&lt;/style&gt;
+        </code>
       </section>
     </main>
   </body>
